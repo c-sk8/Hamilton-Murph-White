@@ -1,17 +1,15 @@
 # Hamilton Murph White
 
-This clock design is based on the Hamilton Khaki Murph Automatic watch.
+This clock or watch design is based on the Hamilton Khaki Field Murph Automatic.
 If I am breaking any copyright rules by copying the design of this watch
 then I am happy to remove this project, but I am a big fan Hamilton watches
-and the designs they use.
+and the designs they use. I spent a long time looking at lots of different watches
+before deciding that this was one of my favourite.
 
-This project uses hand crafted **SVG** files, and is made into a working clock using
-Javascript, CSS, and HTML.
+This project uses hand crafted **SVG** files created using Affinity Designer 2,
+and is made into a working time piece with **Javascript**, **CSS**, and **HTML**.
 
-The size of the clock is fairly small which fits well onto a small display like that of an iPhone.
-By zooming in using your browser you can fill the screen for larger displays.
-Because it is made with SVG the shapes will always have sharp edges.
+By using the **Zoom In** and **Zoom Out** feature of your browser you can change
+the size of the watch face.
 
-The end result can be viewed Here: 
-
-https://c-sk8.github.io/hamilton-murph-white/
+The end result can be viewed Here: https://c-sk8.github.io/hamilton-murph-white/
