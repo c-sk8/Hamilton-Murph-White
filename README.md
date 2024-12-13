@@ -14,4 +14,4 @@ the size of the watch face. I have only tested it with the Safari browser on my 
 
 The end result can be viewed here: https://c-sk8.github.io/hamilton-murph-white/
 
-<img src="https://github.com/c-sk8/Hamilton-Murph-White/blob/main/image/preview.png" width="333" />
+<img src="https://github.com/c-sk8/Hamilton-Murph-White/blob/main/image/preview.png" width="369" />
