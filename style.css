@@ -28,8 +28,8 @@ body {
 }
 
 .second-hand {
-	transition-timing-function: ease;
-	transition-duration: 0.33s;
+	transition-timing-function: ease-in;
+	transition-duration: 0.15s;
 }
 
 .minute-hand, .hour-hand {

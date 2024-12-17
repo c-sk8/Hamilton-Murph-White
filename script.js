@@ -57,7 +57,9 @@ function intervalAction() {
 	return intervalAction;
 }
 
+document.body.classList.add("resize-animation-stopper");
 intervalAction();
+document.body.classList.remove("resize-animation-stopper");
 
 const myInterval = setInterval(intervalAction, 333);
 
@@ -68,7 +70,7 @@ window.addEventListener("resize", () => {
 	clearTimeout(resizeTimer);
 	resizeTimer = setTimeout(() => {
 		document.body.classList.remove("resize-animation-stopper");
-	}, 1000);
+	}, 333);
 });
 
 document.addEventListener("visibilitychange", () => {
@@ -77,7 +79,7 @@ document.addEventListener("visibilitychange", () => {
 		clearTimeout(resizeTimer);
 		resizeTimer = setTimeout(() => {
 			document.body.classList.remove("resize-animation-stopper");
-		}, 1000);
+		}, 333);
         // console.log("Tab is now visible.");
     } else if (document.visibilityState === "hidden") {
         // console.log("Tab is now hidden.");
