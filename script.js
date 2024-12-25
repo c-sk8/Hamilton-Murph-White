@@ -5,7 +5,7 @@ let previous_minutes = 0;
 let accumulated_hours = 0;
 let previous_hours = 0;
 
-function intervalAction() {
+function intervalAction(animate = true) {
     const now = new Date();
 	let second_hand = document.querySelector(".second-hand");
 	let minute_hand = document.querySelector(".minute-hand");
@@ -49,17 +49,28 @@ function intervalAction() {
     const minutesDegrees = ((accumulated_minutes + minutes) / 60) * 360;
     const hoursDegrees = ((accumulated_hours + hours) / 12) * 360;
 
+	if(animate == false)
+	{
+		second_hand.style.transition = "0s";
+		minute_hand.style.transition = "0s";
+		hour_hand.style.transition = "0s";
+	}
+	else
+	{
+		second_hand.style.transition = "0.15s";
+		minute_hand.style.transition = "1s";
+		hour_hand.style.transition = "1s";
+	}
+        
     // Set rotation angle for each hand
     second_hand.style.transform = `rotate(${secondsDegrees}deg)`;
     minute_hand.style.transform = `rotate(${minutesDegrees}deg)`;
     hour_hand.style.transform = `rotate(${hoursDegrees}deg)`;
-        
+
 	return intervalAction;
 }
 
-document.body.classList.add("resize-animation-stopper");
-intervalAction();
-document.body.classList.remove("resize-animation-stopper");
+intervalAction(false);
 
 const myInterval = setInterval(intervalAction, 333);
 
