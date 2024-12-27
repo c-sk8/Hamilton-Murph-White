@@ -57,8 +57,8 @@ function intervalAction(animate = true) {
 	}
 	else
 	{
-		second_hand.style.transition = "0.15s";
-		minute_hand.style.transition = "1s";
+		second_hand.style.transition = "0.25s";
+		minute_hand.style.transition = "0.25s";
 		hour_hand.style.transition = "1s";
 	}
         
